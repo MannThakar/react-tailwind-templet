@@ -64,16 +64,15 @@ const Modal = ({
               transition={{ duration: 0.3 }}
               className=" min-h-[calc(100vh-s)] h-full overflow-y-auto md:min-h-0 "
             >
-              <div className="mx-10 md:mx-auto px-1">{children}</div>
+              <div className="mx-10 md:mx-5 lg:mx-auto px-1">{children}</div>
             </motion.div>
           </AnimatePresence>
 
-          <div className="flex justify-end gap-2 my-5 md:my-12 mx-10 md:mx-0">
+          <div className="flex justify-end gap-2 my-5 lg:my-12 mx-10 lg:mx-0">
             {currentStep?.stepNumber > 1 && (
               <button
                 onClick={() => handleBack(currentStep?.stepNumber)}
                 className="px-6 py-2 rounded-lg bg-gray-200 text-gray-600 transition duration-200 cursor-pointer hover:bg-gray-300"
-                type="button"
               >
                 Back
               </button>
