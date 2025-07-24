@@ -33,7 +33,7 @@ const Steps = ({ step, stepName, active, completed }) => {
       <h4
         className={`${
           active ? "text-black" : "text-gray-800"
-        } text-[14px] font-[500]`}
+        } text-[14px] font-[500] hidden md:block`}
       >
         {stepName}
       </h4>
